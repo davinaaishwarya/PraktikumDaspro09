@@ -4,7 +4,6 @@ public class StudiKasus209 {
         Scanner sc = new Scanner(System.in);
 
         String namaMahasiswa, jenisKegiatan;
-        int jumlahDokumen, peringkatJuara;
         int jumlahDokumen, peringkatJuara, statusPKM;
 
         System.out.println("Nama mahasiswa : ");
