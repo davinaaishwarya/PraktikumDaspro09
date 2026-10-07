@@ -7,6 +7,7 @@ public class StudiKasus209 {
 
         String namaMahasiswa, jenisKegiatan;
         int jumlahDokumen, peringkatJuara;
+        int jumlahDokumen, peringkatJuara, statusPKM;
 
         System.out.println("Nama mahasiswa : ");
         namaMahasiswa = sc.nextLine();
@@ -22,6 +23,7 @@ public class StudiKasus209 {
         peringkatJuara = sc.nextInt();
 
         if (jumlahDokumen < 4) {
+        if (jumlahDokumen < 4) { 
             System.out.println("Status : Dokumen tidak lengkap (kurang " + (4 - jumlahDokumen) + " dokumen). " + "Dana penghargaan tidak diberikan.");
         } else {
             if (peringkatJuara == 1 ||
@@ -30,8 +32,30 @@ public class StudiKasus209 {
             System.out.println("Status : Dana penghargaan diberikan.");     
             } else {
                 System.out.println("Status : Bukan juara 1, 2, atau 3. " + "Dana penghargaan diberikan.");
+                System.out.println("Status : Bukan juara 1, 2, atau 3. " + "Dana penghargaan tidak diberikan.");
             }
         }
+        // Jika kegiatan PKM
+        } else if (jenisKegiatan.equalsIgnoreCase("PKM")) {
+            System.out.println("Status pendanaan PKM (1 = lolos, 0 = tidak lolos : ");
+            statusPKM = sc.nextInt();
+            
+             if (jumlahDokumen < 4) { 
+            System.out.println("Status : Dokumen tidak lengkap (kurang " + (4 - jumlahDokumen) + " dokumen). " + "Dana penghargaan tidak diberikan.");
+        } else {
+            if (statusPKM == 1) {
+                System.out.println("Status : Dana penghargaan diberikan. ");
+            } else {
+                System.out.println("Status : PKM tidak lolos pendanaan. " + "Dana penghargaan tidak diberikan.");
+            }
+        }
+        // Jika kegiatan lainnya
+        } else {
+            if (jumlahDokumen < 4) {
+            System.out.println("Status : Dokumen tidak lengkap (kurang " + (4 - jumlahDokumen) + " dokumen). " + "Dana penghargaan tidak diberikan.");
+            } else {
+                System.out.println("Status : Kegiatan lainnya. " + "Dana penghargaan tidak diberikan. ");
+            }
         }
         
     }
