@@ -8,10 +8,8 @@ public class StudiKasus109 {
         int totalHarga, diskon, totalBayar;
         int kembalian, kurang;
 
-        System.out.println(" Masukkan jumlah cup : ");
         System.out.println("Masukkan jumlah cup : ");
         jumlahCup = sc.nextInt();
-        System.out.println( " Masukkan uang bayar : ");
         System.out.println( "Masukkan uang bayar : ");
         uangBayar = sc.nextInt();
 
