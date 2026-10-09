@@ -6,15 +6,15 @@ Kelas  : SIB-1C
 Hasil Uji Studi Kasus 2 oleh Stefan Parhusip
 | No | Jenis | Dokumen | Juara/Dana | Output  | Sesuai? |
 |----|-------|---------|------------|---------|---------|
-| 1  | 2     | 4       | 3          | tidak berhak| Ya      |
+| 1  | Bakorma|3       | 1          | tidak berhak| Ya      |
 
 | No | Jenis | Dokumen | Juara/Dana | Output  | Sesuai? |
 |----|-------|---------|------------|---------|---------|
-| 1  | 2     | 4       | 3          | tidak berhak  |  Ya     |
+| 1  | Mandiri| 4       | 0         | tidak berhak|  Ya  |
 
 | No | Jenis | Dokumen | Juara/Dana | Output  | Sesuai? |
 |----|-------|---------|------------|---------|---------|
-| 1  | 2     | 4       | 3          | berhak  | Ya      |
+| 1  | PKM     | 4       | 1          | berhak  | Ya      |
 
 
 
